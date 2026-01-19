@@ -1,7 +1,8 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Implementation of Algorithm Distillation"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+[*GitHub Repository*](https://github.com/tommyma3/Algorithm_Distillation)
+
+Implement Algorithm Distillation from the paper [*In Context Reinforcement Learning with Algorithm Distillation*](https://arxiv.org/abs/2210.14215), where a single transformer model is trained to in-context learn the source RL algorithm to solve various RL tasks. The project is implemented on the Darkroom environment.
