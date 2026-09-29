@@ -7,6 +7,6 @@ link: https://github.com/tommyma3/self-summarization-agent
 
 [*GitHub Repository*](https://github.com/tommyma3/self-summarization-agent)
 
-- Built a self-summarizing research agent for BrowseComp-Plus that performs iterative search, get document, and finish tool calls while automatically compressing context to avoid overflowing the context window.
-- Implemented an RL training pipeline including offline vLLM rollout collection, reward-aligned trajectory extraction, and customized GRPO trainer.
-- Developed configurable experiment launchers for benchmark runs and result analysis.
+- Built a self-summarizing research agent for BrowseComp-Plus that iteratively executes tool calls (e.g. search, retrieve docs) while automatically compacting interaction history to operate within a fixed context window.
+- Developed an end-to-end reinforcement learning pipeline with vLLM-based rollout generation, reward-aligned trajectory extraction, and GRPO training using VERL.
+- Enabled Qwen3.5-9B to solve long-horizon research tasks with context compaction, achieving a **2× improvement in accuracy** on BrowseComp-Plus.

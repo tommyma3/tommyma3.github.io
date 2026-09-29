@@ -1,0 +1,65 @@
+/* Publication entries share the site's light and dark theme colors. */
+.publication-list {
+  margin-top: 1.5em;
+  max-width: 48rem;
+}
+
+.publication-entry {
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid var(--global-border-color);
+  border-left: 3px solid var(--global-base-color);
+  border-radius: $border-radius;
+
+  &__type {
+    margin: 0 0 0.75em;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0 0 0.85em;
+    font-size: 1.15em;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+
+  &__summary {
+    font-size: 0.85em;
+    line-height: 1.7;
+
+    p {
+      margin: 0 0 1em;
+    }
+  }
+
+  a.publication-entry__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    min-height: 44px;
+    padding: 0.35em 0.85em;
+    border: 1px solid var(--global-dark-border-color);
+    border-radius: $border-radius;
+    color: var(--global-text-color);
+    font-size: 0.8em;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--global-base-color);
+      background: var(--global-footer-bg-color);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-base-color);
+      outline-offset: 3px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 1em;
+  }
+}

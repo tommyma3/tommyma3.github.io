@@ -11,6 +11,20 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="publication-list">
+  <article class="publication-entry" itemscope itemtype="http://schema.org/CreativeWork">
+    <p class="publication-entry__type">Preprint</p>
+    <h2 class="publication-entry__title" itemprop="headline">
+      Scalable In-Context Reinforcement Learning with Recurrent Algorithm Distillation
+    </h2>
+    <div class="publication-entry__summary" itemprop="description">
+      <p>Proposed <strong>Recurrent Algorithm Distillation (RAD)</strong>, a dual-memory in-context RL agent that recursively compresses long interaction histories into a fixed-size latent memory. The policy autoregressively predicts actions conditioned on this memory plus a short working memory.</p>
+      <p>Across multiple environments, RAD matches or outperforms AD with <strong>up to 4× shorter context</strong> and <strong>up to 93% fewer inference FLOPs per action</strong>.</p>
+    </div>
+    <a class="publication-entry__link" href="https://arxiv.org/abs/2609.35333" itemprop="url" aria-label="Read Scalable In-Context Reinforcement Learning with Recurrent Algorithm Distillation on arXiv">arXiv <span aria-hidden="true">&rarr;</span></a>
+  </article>
+</div>
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
@@ -31,6 +45,4 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
 
